@@ -15,4 +15,12 @@ These instructions will be used as notes on what I've done to get this working o
 tar -zxvf mongodb-osx-x86_64-3.4.2.tgz
 ```
 *Common sense check: if this isn't working, check to make sure your terminal is at the correct directory, and the file name matches before consulting the interwebs for their infinite knowledge*
-3.
+3.Move the mongoDB directory to an appropriate location. Add it to your $PATH variable
+```
+export PATH=<mongodb-install-directory>/bin:$PATH
+```
+*In case you haven't done this before, this allows you to access the binaries included with MongoDB from anywhere in the terminal. You save the line above to your bash profile. To access it (because I hate vim) you can use the following command to open it:*
+```
+touch ~/.bash_profile; open ~/.bash_profile
+```
+4.Create a directory where MongoDB will save its data.
