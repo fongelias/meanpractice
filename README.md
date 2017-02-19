@@ -15,6 +15,7 @@ These instructions will be used as notes on what I've done to get this working o
 tar -zxvf mongodb-osx-x86_64-3.4.2.tgz
 ```
 *Common sense check: if this isn't working, check to make sure your terminal is at the correct directory, and the file name matches before consulting the interwebs for their infinite knowledge*
+
 3.Move the mongoDB directory to an appropriate location. Add it to your $PATH variable
 ```
 export PATH=<mongodb-install-directory>/bin:$PATH
@@ -23,4 +24,11 @@ export PATH=<mongodb-install-directory>/bin:$PATH
 ```
 touch ~/.bash_profile; open ~/.bash_profile
 ```
-4.Create a directory where MongoDB will save its data.
+4.Create a directory where MongoDB will save its data. By default, it should live in "/data/db". To store the information somewhere else, use `mongod --dbpath <path to data directory>`. Otherwise:
+```
+sudo chown -R $USER /data/db
+```
+####Node
+*To be added, this part is a bit simpler and you're less likely to run into issues here*
+
+###Starting a project
