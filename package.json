@@ -1,0 +1,29 @@
+{
+  "name": "meanpractice",
+  "version": "1.0.0",
+  "description": "project used to build a local mean stack app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fongelias/meanpractice.git"
+  },
+  "keywords": [
+    "boilerplate",
+    "test",
+    "practice"
+  ],
+  "author": "Elias",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fongelias/meanpractice/issues"
+  },
+  "homepage": "https://github.com/fongelias/meanpractice#readme",
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.14.1",
+    "gulp": "^3.9.1"
+  }
+}
