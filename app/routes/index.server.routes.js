@@ -1,3 +1,7 @@
+//Dependency Injection
+/*None*/
+
+//Exposed module
 module.exports = function(app) {
 	var index = require('../controllers/index.server.controller');
 	//Uses index.render to respond to requests to the root path
